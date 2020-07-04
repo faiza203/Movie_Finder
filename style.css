@@ -1,0 +1,20 @@
+body {
+  background-color: aqua;
+  margin: 0;
+  border: blueviolet 10px solid;
+}
+#heading {
+  background-color: #72fef6;
+  display: flex;
+  height: 100px;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  color: deepskyblue;
+  font-size: xx-large;
+  border: blue 5px solid ;
+  border-bottom: none;
+}
+#first-icon {
+  margin: 35px 18px 18px 18px;
+}
