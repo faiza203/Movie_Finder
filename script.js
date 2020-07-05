@@ -19,17 +19,31 @@ const fetchData = async () => {
     div.setAttribute("id" , "newDiv")
     div.innerHTML = `<img src="${movies[movie].Poster}"/>
     <h1>${movies[movie].Title}</h1>`;
-    text.value = text.value ;
+    text.value = text.value;
     if(movies[movie].Poster === "N/A"){
       div.innerHTML = `<img src="${movies[0].Poster}"/>
       <h1>${movies[movie].Title}</h1>`;
     }
     dropdownMenu.appendChild(div); 
-    dropdownMenu.style.border = " 1px solid #aba7a7"
+    dropdownMenu.style.border = " 1px solid #aba7a7" ;
     div.addEventListener("click",function(){
+      div.innerHTML = `<img src="${movies[movie].Poster}"/>
+      <div>
+      <h1>${movies[movie].Title}</h1>
+      <h2>The film was released on ${movies[movie].Year}</h2>
+      <p>The id of film is ${movies[movie].imdbID}</p>
+      </div>`;
+      if(movies[movie].Poster === "N/A"){
+        div.innerHTML = `<img src="${movies[0].Poster}"/>
+        <div>
+        <h1>${movies[movie].Title}</h1>
+        <h2>The film was released on ${movies[movie].Year}</h2>
+        <p>The id of film is ${movies[movie].imdbID}</p>
+        </div>`;
+      }
       targets.appendChild(div);
       text.value = movies[movie].Title    
-      dropdownMenu.remove(div)
+      dropdownMenu.remove(div) ;
     })
   }
 
