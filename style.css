@@ -1,20 +1,87 @@
 body {
-  background-color: aqua;
   margin: 0;
-  border: blueviolet 10px solid;
+  line-height: 40px;
+  height: 100%;
 }
+
 #heading {
-  background-color: #72fef6;
   display: flex;
   height: 100px;
   width: auto;
   text-align: center;
   justify-content: center;
-  color: deepskyblue;
+  color: red;
   font-size: xx-large;
-  border: blue 5px solid ;
-  border-bottom: none;
+ border: 10px darkturquoise solid;
+ background-image: linear-gradient(to right , pink,darkturquoise,pink,darkturquoise,pink,darkturquoise,pink);
 }
 #first-icon {
   margin: 35px 18px 18px 18px;
+}
+#container{
+  text-align: center;
+}
+#input{
+  border: 3px solid #aba7a7;
+  border-radius: 10px;
+  width: 300px;
+  height: 20px;
+  color: red;
+  background-color: #ffffff;
+}
+#submit{
+  border-radius: 10px;
+  border:none;
+  height: 20px;
+  color: red;
+  background-color: bisque;
+}
+#targets{
+  display: inline-flex;
+  flex-direction: column;
+}
+#targets #newDiv{
+  display: flex;
+  flex-direction: row; 
+  margin-left: 200px;
+  border: 1px solid #aba7a7;
+}
+
+#targets #newDiv img{
+  height: 250px;
+  width: 200px;
+  margin: 10px;
+}
+#targets #newDiv h1{
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+}
+#dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#newDiv{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+}
+#newDiv img{
+  height: 100px;
+  width: 100px;
+}
+#newDiv h1{
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 35px;
+  margin-left: 10px;
 }
